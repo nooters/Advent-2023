@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.IO;
 
 string[] lines = File.ReadAllLines("d1input.txt");
@@ -50,14 +51,15 @@ foreach (string s in lines)
         //Instead of stapling on a word check to the previous part we can just check both words and numbers at the same time
         sub = s.Substring(index);
         if(sub.StartsWith("one") || sub.StartsWith("1")){word = 1;}
-        if(sub.StartsWith("two") || sub.StartsWith("2")){word = 2;}
-        if(sub.StartsWith("three") || sub.StartsWith("3")){word = 3;}
-        if(sub.StartsWith("four") || sub.StartsWith("4")){word = 4;}
-        if(sub.StartsWith("five") || sub.StartsWith("5")){word = 5;}
-        if(sub.StartsWith("six") || sub.StartsWith("6")){word = 6;}
-        if(sub.StartsWith("seven") || sub.StartsWith("7")){word = 7;}
-        if(sub.StartsWith("eight") || sub.StartsWith("8")){word = 8;}
-        if(sub.StartsWith("nine") || sub.StartsWith("9")){word = 9;}
+        else if(sub.StartsWith("two") || sub.StartsWith("2")){word = 2;}
+        else if(sub.StartsWith("three") || sub.StartsWith("3")){word = 3;}
+        else if(sub.StartsWith("four") || sub.StartsWith("4")){word = 4;}
+        else if(sub.StartsWith("five") || sub.StartsWith("5")){word = 5;}
+        else if(sub.StartsWith("six") || sub.StartsWith("6")){word = 6;}
+        else if(sub.StartsWith("seven") || sub.StartsWith("7")){word = 7;}
+        else if(sub.StartsWith("eight") || sub.StartsWith("8")){word = 8;}
+        else if(sub.StartsWith("nine") || sub.StartsWith("9")){word = 9;}
+
         if(word != 0)
         {
             if (first == -2)
