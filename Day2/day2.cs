@@ -1,6 +1,5 @@
 using System;
 using System.IO;
-using System.Xml;
 
 internal class Day2
 {
@@ -15,6 +14,7 @@ internal class Day2
 
         foreach (string s in lines)
         {
+            poss = true;
             sub = s;
             game = int.Parse(sub.Substring(5, sub.IndexOf(':') - 5));
             sub = sub.Substring(6 + game.ToString().Length);
@@ -79,7 +79,7 @@ internal class Day2
                 }
                 
             }
-            if(sub == "")
+            if(poss == true)
             {
                 score += game;
                 Console.WriteLine("Game {0} possible", game);
