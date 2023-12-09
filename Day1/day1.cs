@@ -3,7 +3,7 @@ using System.IO;
 
 internal class Day1
 {
-    private static void Main(string[] args)
+    private static void Main1(string[] args)
     {
         string[] lines = File.ReadAllLines("d1input.txt");
 

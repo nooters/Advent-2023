@@ -3,7 +3,7 @@ using System.IO;
 
 internal class Day2
 {
-    private static void Main(string[] args)
+    private static void Main2(string[] args)
     {
         //colors = red, green, blue
         int[] power = { 0, 0, 0, 0 };
